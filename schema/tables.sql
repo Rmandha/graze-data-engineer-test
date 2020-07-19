@@ -1,5 +1,12 @@
-CREATE TABLE example_table (
-  id int(11) NOT NULL
-);
+# Lets create the table into which all the retail sales data will be pushed.
 
--- Implement SQL to create your MySQL table in which to store the retail sales data from the CSVs
+CREATE TABLE IF NOT EXISTS retail_sales (
+sale_id INT NOT NULL AUTO INCREMENT,
+retailer VARCHAR(50) NOT NULL,
+store VARCHAR(50) NOT NULL,
+product_id INT,
+product_name VARCHAR(255) NOT NULL,
+week_commencing Date,
+sales_unit INT,
+sales_value Decimal(10,2),
+PRIMARY KEY(sale_id) )
