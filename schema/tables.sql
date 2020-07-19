@@ -1,7 +1,7 @@
 # Lets create the table into which all the retail sales data will be pushed.
 
 CREATE TABLE IF NOT EXISTS retail_sales (
-sale_id INT NOT NULL AUTO INCREMENT,
+sale_id INT NOT NULL AUTO_INCREMENT,
 retailer VARCHAR(50) NOT NULL,
 store VARCHAR(50) NOT NULL,
 product_id INT,
